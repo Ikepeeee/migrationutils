@@ -40,7 +40,7 @@ public class DBTable{
 	}
 
 	
-	public RTable createTable() {
+	public RTable createRTable() {
 		return new RTable(toHashList("SELECT * FROM " + "\"" + table + "\""));
 	}
 

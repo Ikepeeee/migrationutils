@@ -60,7 +60,7 @@ public class TEST_RelationalTable extends TEST_Table<String> {
 	 * 選択演算をサポートします。
 	 * 
 	 * @param booleanExp
-	 *            条件 ex)[商品名] = 時計 and [商品ID] = A001 or...
+	 *            条件 ex)[商品名] = "時計" and [商品ID] = "A001" or...
 	 */
 	public RTable where(String booleanExp) {
 		return null;
@@ -208,7 +208,7 @@ public class TEST_RelationalTable extends TEST_Table<String> {
 				String val = row.get(key);
 				// 数字文字に関わらず文字列とする。
 				script = script.replace("[".concat(key).concat("]"), "'".concat(val).concat("'"));
-
+				
 			}
 		}
 

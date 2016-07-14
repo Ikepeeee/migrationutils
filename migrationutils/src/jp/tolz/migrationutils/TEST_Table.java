@@ -175,13 +175,20 @@ public class TEST_Table<T> implements TableImpl {
 	public T[][] addRow(Object[] row) {
 		T[][] rettable = Arrays.copyOf(table, table.length + 1);
 		rettable[rettable.length - 1] = (T[]) copy(row);
-		return null;
+		return rettable;
 	}
 
+	/**
+	 * ÅŒãs‚É•¡”‚Ìs‚ğ’Ç‰Á‚µ‚Ü‚·B
+	 */
 	@Override
 	public T[][] addRows(Object[][] rows) {
-		// TODO Auto-generated method stub
-		return null;
+		int addsize = rows.length;
+		T[][] rettable = Arrays.copyOf(table, table.length + addsize);
+		for(int i = table.length; i < table.length + addsize; i++){
+			rettable[i] = (T[]) copy(rows[i - table.length]);
+		}
+		return rettable;
 	}
 
 	@Override
@@ -219,5 +226,7 @@ public class TEST_Table<T> implements TableImpl {
 		// TODO Auto-generated method stub
 		return null;
 	}
+	
+	
 
 }

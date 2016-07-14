@@ -52,7 +52,7 @@ public class CSVTable {
 
 	}
 
-	public RTable createTable() {
+	public RTable createRTable() {
 		ArrayList<LinkedHashMap<String, String>> tbl = new ArrayList<LinkedHashMap<String, String>>();
 
 		try {

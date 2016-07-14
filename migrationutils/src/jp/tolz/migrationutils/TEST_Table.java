@@ -8,11 +8,11 @@ import java.io.ObjectOutputStream;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class Table<T> implements TableImpl {
+public class TEST_Table<T> implements TableImpl {
 	protected T[][] table;
 	protected T[] heads;
 
-	public Table() {
+	public TEST_Table() {
 	}
 
 	/**
@@ -23,7 +23,7 @@ public class Table<T> implements TableImpl {
 	 * @param table
 	 *            テーブル内容
 	 */
-	public Table(T[] heads, T[][] table) {
+	public TEST_Table(T[] heads, T[][] table) {
 		this.heads = (T[]) copy(heads);
 		this.table = (T[][]) copy(table);
 		int i = 0;
@@ -38,7 +38,7 @@ public class Table<T> implements TableImpl {
 	 * @param tableWithHead
 	 *            カラム付きテーブル
 	 */
-	public Table(T[][] tableWithHead) {
+	public TEST_Table(T[][] tableWithHead) {
 		int size = tableWithHead.length;
 		this.heads = tableWithHead[0];
 		this.table = (T[][]) new Object[size - 1][];

@@ -7,6 +7,7 @@ import javax.script.ScriptException;
 /**
  * JavaScriptによって命題論理式の真偽判定を行います。
  * 任意のJavaScriptが実行可能ですが、最後に参照されたオブジェクトがboolean型でないとエラーになります。
+ * evalによる実行のため危険があります十分注意してください。
  * @author 池田 透
  */
 public class BooleanExp {

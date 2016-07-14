@@ -17,7 +17,7 @@ import org.apache.commons.lang.math.NumberUtils;
  * @author ’r“c “§
  *
  */
-public class TEST_RelationalTable extends Table<String> {
+public class TEST_RelationalTable extends TEST_Table<String> {
 	HashMap<String, Integer> headHash;
 
 	public TEST_RelationalTable(String[] heads, String[][] table) {

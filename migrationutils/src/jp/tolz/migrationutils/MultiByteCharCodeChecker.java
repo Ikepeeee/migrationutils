@@ -27,7 +27,7 @@ public class MultiByteCharCodeChecker {
 	 * @param file
 	 *            チェック対象のファイル
 	 * @param codeTable
-	 *            文字コード対応表(kisi.ikou.myutilにコミットしてあるもの)
+	 *            文字コード対応表(サンプルはjp.tolz.migrationutils.Unicode.csv)
 	 */
 	public MultiByteCharCodeChecker(File file, File codeTable) {
 		this.file = file;

@@ -1,2 +1,2 @@
 # migrationutils
-The utils to crean table data and chack table format.
+The utils to clean table data and chack table format.
